@@ -7,12 +7,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.ArrayList;
 
 public final class RTPPlugin extends JavaPlugin {
-ArrayList<Player> players;
     @Override
     public void onEnable() {
         // Plugin startup logic
         Bukkit.getConsoleSender().sendMessage("Starting up SimpleRTP!");
-        getCommand("rtp").setExecutor(new RTPCommand());
+        getCommand("rtp").setExecutor(new RTPCommand(this));
+        getCommand("rtpReload").setExecutor(new Reload(this));
     }
 
     @Override
