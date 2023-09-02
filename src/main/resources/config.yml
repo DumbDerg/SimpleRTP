@@ -1,0 +1,11 @@
+# SimpleRTP by Merci
+
+Overworld: true
+End: false
+
+# If set to 0, it will use the world border as the range
+RTP Range: 5000
+# %s is the location the player was teleported too!
+Teleport Successful Message: "&aTeleportation was successful!\n&6Your Coordinates: %s"
+# In seconds
+Cooldown: 60

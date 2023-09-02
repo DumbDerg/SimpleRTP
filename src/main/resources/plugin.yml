@@ -6,3 +6,6 @@ commands:
   rtp:
     description: Random TP
     usage: /<command>
+  rtpReload:
+    description: reloads the config.yml
+    usage: /<command>
